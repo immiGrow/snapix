@@ -1,0 +1,24 @@
+The JOBS for which user can apply ::--->
+1. Frontend Developer
+2. Backened Developer ( who could increase the number of request per month )
+3. Event Organiser 
+    a. Senior Photographer
+    b. Award Distributor
+4. Data Analyser
+5. Photo Transformations Developer
+6. Website Activities
+
+NOW AFTER 2 MONTHS ---> 01-JUNE-2023
+
+A. Feedback of the user ( UI or Photo )
+B. Your Account ---> Youtube, Facebook, Instagram, Twitter etc...
+C. Comment option on profile page
+D. Profile Rating ---> DIAMOND, GOLD, SILVER, BRONZE, BEGINNER
+E. Leaderboard generate
+
+CHANGES IN UI ::--->
+1. Apply the medal svg at the top corner of the screen.
+2. Completely change the UI of Statistics page.
+
+ADD FEATURES ::--->
+1. Public or Private Collections

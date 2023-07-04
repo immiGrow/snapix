@@ -1,0 +1,22 @@
+[
+    {
+        "name": "searchPhotos",
+        "private": false,
+        "disable_arg_logs": true
+    },
+    {
+        "name": "searchAutoComplete",
+        "private": false,
+        "disable_arg_logs": true
+    },
+    {
+        "name": "searchRelCltns",
+        "private": false,
+        "disable_arg_logs": true
+    },
+    {
+        "name": "searchRelPhotos",
+        "private": false,
+        "disable_arg_logs": true
+    }
+]

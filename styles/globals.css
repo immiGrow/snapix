@@ -1,0 +1,163 @@
+/* Gallery photos format */
+
+.render-div {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+    -webkit-column-width: 33%;
+    -moz-column-width: 33%;
+    column-width: 33%;
+}
+
+.render-div .rendering-img {
+    -webkit-transition: all 350ms ease;
+    transition: all 350ms ease;
+    cursor: pointer;
+}
+
+@media (max-width:772px) {
+    .render-div {
+        text-align: center;
+        -webkit-column-count: 3;
+        -moz-column-count: 3;
+        column-count: 3;
+        -webkit-column-width: 33%;
+        -moz-column-width: 33%;
+        column-width: 33%
+    }
+}
+
+@media (max-width:425px) {
+    .render-div {
+        text-align: center;
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count: 2;
+        -webkit-column-width: 50%;
+        -moz-column-width: 50%;
+        column-width: 50%;
+    }
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.slider {
+    height: 250px;
+    margin: auto;
+    position: relative;
+    width: 90%;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+}
+
+.slide-track {
+    display: flex;
+    width: calc(250px * 28);
+    animation: scroll 72s linear infinite;
+}
+
+.slide {
+    height: 200px;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+.img {
+    width: 100%;
+}
+
+.slider::before,
+.slider::after {
+    background: linear-gradient(to right, rgba(255, 255, 255, 1)) 0%, rgba(255, 255, 255, 0) 100%;
+    content: '';
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    z-index: 3;
+}
+
+.slider::before {
+    left: 0;
+    top: 0;
+}
+
+.slider::after {
+    right: 0;
+    top: 0;
+    transform: translateZ(180deg);
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0)
+    }
+    100% {
+        transform: translateX(calc(-250px * 14))
+    }
+}
+
+
+/* Swiper js CSS styles of prev-next arrow */
+
+.swiper-button-next {
+    background-image: url("../Components/Images/arrow.png");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+    transform: rotate(90deg);
+}
+
+.swiper-button-prev {
+    background-image: url("../Components/Images/arrow.png");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+    transform: rotate(270deg);
+}
+
+.swiper-button-next::after {
+    display: none;
+}
+
+.swiper-button-prev::after {
+    display: none;
+}
+
+.swiper-container {
+    width: 425px;
+    padding-left: 50px;
+}
+
+@media screen and (min-width: 320px) {
+    .swiper-container {
+        width: 320px;
+    }
+}
+
+@media screen and (min-width: 425px) {
+    .swiper-container {
+        width: 425px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .swiper-container {
+        width: 768px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .swiper-container {
+        width: 1024px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .swiper-container {
+        width: 1440px;
+    }
+}
